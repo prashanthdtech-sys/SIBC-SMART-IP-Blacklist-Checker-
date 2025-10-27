@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart IP - Blacklist Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+    <h1>🕵️ Smart IP Checker</h1>
+    <div class="container">
+      <h2 class="title">Blacklist Checker⛔</h2>
+      <div class="checker-card">
+        <input
+          id="blacklistInput"
+          class="input-field"
+          type="text"
+          placeholder="Enter IP or CIDR (e.g., 45.38.9.0/24)"
+        />
+
+        <div class="button-row">
+          <button id="blacklistCheckBtn" class="btn check-btn">Check</button>
+          <button class="btn clear-btn" onclick="clearBlacklist()">
+            Clear
+          </button>
+        </div>
+
+        <div id="blacklistError" class="error-message hidden"></div>
+        <div id="blacklistSpinner" class="spinner hidden"></div>
+
+        <div id="blacklistResults" class="results hidden">
+          <h3>Blacklisted IPs</h3>
+          <table class="fancy-table">
+            <thead>
+              <tr>
+                <th>IP Address</th>
+                <th>Blacklisted On</th>
+              </tr>
+            </thead>
+            <tbody id="blacklistResultsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div>
+
+    <footer>
+      <p>© 2025 Smart IP Tool — Blacklist Checker</p>
+    </footer>
+
+    <script src="scripts/blackList.js"></script>
+    <script src="scripts/clear.js"></script>
+    <script src="scripts/spinner.js"></script>
+  </body>
+</html>
