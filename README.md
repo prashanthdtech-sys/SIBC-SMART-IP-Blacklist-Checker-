@@ -1,4 +1,4 @@
-# Smart IP Tool - Blacklist Checker
+# Smart IP Tool - Blacklist Checker ⛔
 
 A web-based tool to check if an IP or a CIDR range is blacklisted across multiple DNSBLs. Its main purpose is to help maintain IP reputation and quickly identify blacklisted addresses.
 
